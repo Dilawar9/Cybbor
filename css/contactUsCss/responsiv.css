@@ -1,0 +1,40 @@
+@media screen and (max-width:991px) {
+    .LetTalk .owner h2 {
+        font-size: 30px;
+    }
+
+    .LetTalk .row {
+        gap: 3rem;
+    }
+
+    .LetTalk .container {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    .LetTalk .owner .d-flex {
+        flex-direction: column;
+    }
+
+    .LetTalk .owner h2 {
+        font-size: 25px;
+    }
+
+    .LetTalk .owner p {
+        font-size: 10px;
+    }
+
+    .LetTalk .owner .d-flex p {
+        font-size: 10px;
+    }
+
+    .LetTalk .owner .d-flex div {
+        text-align: left;
+    }
+    .mape iframe{
+        height: 450px;
+    }
+
+}

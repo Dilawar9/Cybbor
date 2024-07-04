@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybbor</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href=" assets/images/fav-icon.svg" type="image/x-icon" />
+    <!-- faremwork of css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- style sheet of css -->
+    <link rel="stylesheet" href=" assets/css/styles.css" />
+    <!-- Responsive sheet of css -->
+    <link rel="stylesheet" href=" assets/css/responsive.css" />
+    <!-- fonts awsome icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- slick-slider link css -->
+    <link rel="stylesheet" href=" assets/css/slick.min.css" />
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <!-- ======== 1.1. header section ======== -->
+        <header>
+            <nav class="container navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a href="./index.html" class="nav-logo p-0">
+                        <figure>
+                            <img src=" assets/images/Cybbor-logo.svg" alt="logo" />
+                        </figure>
+                    </a>
+                    <button class="open-aside" onclick="open_aside()" type="button">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav d-flex justify-content-center
+                        align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2
+                        mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./About.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Pricing.html">Pricing</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link" href="#">
+                                    Pages<i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li>
+                                        <a class="dropdown-item" href="./Blog.html">Our Blog</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./Blog.html">Blog Details</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item active" href="./Team.html">Team</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./Testimonial.html">Testimoinals</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./FAQ.html">FAQs</a></li>
+                                    <li>
+                                        <a class="dropdown-item" href="./ContactUs.html">Contact</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./404.html">404</a></li>
+                                    <li><a class="dropdown-item" href="./ComingSoon.html">Coming Soon</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div>
+                            <button class="join-btn hover1">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--===== aside navigation slidebar =====-->
+            <aside>
+                <div id="mySidenav" class="right-sidbar">
+                    <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
+                        <figure class="navbar-brand">
+                            <a href="./index.html"><img src=" assets/images/Cybbor-logo.svg" alt="img" /></a>
+                        </figure>
+                        <button class="fa-solid fa-xmark" onclick="close_aside()"></button>
+                    </div>
+                    <ul>
+                        <li class="nav-item">
+                            <a aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./Blog.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="d-flex align-items-center justify-content-between" id="slid-btn">
+                                <button class="a-slid page-btn">Pages</button>
+                                <i class="fa-solid fa-caret-down pe-2"></i>
+                            </div>
+                            <ul id="slid-drop">
+                                <li><a href="./Blog.html">Blog Detail</a></li>
+                                <li><a href="./Blog.html">Our Blog</a></li>
+                                <li><a href="./Team.html" class="active">Team</a></li>
+                                <li><a href="./Testimonial.html">Testimonials</a></li>
+                                <li><a href="./FAQ.html">FAQs</a></li>
+                                <li><a href="./ContactUs.html">Contact</a></li>
+                                <li><a href="./404.html">404</a></li>
+                                <li><a href="./ComingSoon.html">Coming Soon</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </header>
+        <!-- =========== End of 1.1. Header Section =========== -->
+        <div class="Subpage_Hero_Header">
+            <!-- ============= 4.1. Subpage_Hero Section  =============-->
+            <section class="Subpage_Hero">
+                <div class="container">
+                    <h5>Our Team</h5>
+                    <h2>Who we’ve worked with</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Scelerisque consectetur velit sed magna phasellus metus.
+                        Ultricies volutpat eget sit orci eu convallis morbi.</p>
+                </div>
+            </section>
+            <!--=========== End of 4.1. Subpage_Hero Section  =========== -->
+        </div>
+        <!-- ============= 2.3. OurTeam Section ========== -->
+        <section class="Ourteam">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 ">
+                        <div>
+                            <div class="team-member">
+                                <figure>
+                                    <img src=" assets/images/index/team_img_1.webp" alt="member1" />
+                                </figure>
+                                <div class="social-icons">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_data">
+                                <h4>Harley Maxwell</h4>
+                                <p>Harley Maxwell</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 ">
+                        <div>
+                            <div class="team-member">
+                                <figure>
+                                    <img src=" assets/images/index/team_img_2.webp" alt="member2" />
+                                </figure>
+                                <div class="social-icons">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_data">
+                                <h4>Harley Maxwell</h4>
+                                <p>Harley Maxwell</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 ">
+                        <div>
+                            <div class="team-member">
+                                <figure>
+                                    <img src=" assets/images/index/team_img_3.webp" alt="member3" />
+                                </figure>
+                                <div class="social-icons">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_data">
+                                <h4>Harley Maxwell</h4>
+                                <p>Harley Maxwell</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 ">
+                        <div>
+                            <div class="team-member">
+                                <figure>
+                                    <img src=" assets/images/index/team_img_4.webp" alt="member4" />
+                                </figure>
+                                <div class="social-icons">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_data">
+                                <h4>Harley Maxwell</h4>
+                                <p>Harley Maxwell</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 mt-lg-4 mt-md-4">
+                        <div>
+                            <div class="team-member">
+                                <figure>
+                                    <img src="assets/images/index/team_img_5.webp" alt="member4" />
+                                </figure>
+                                <div class="social-icons">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_data">
+                                <h4>Harley Maxwell</h4>
+                                <p>Harley Maxwell</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 mt-lg-4 mt-md-4">
+                        <div>
+                            <div class="team-member">
+                                <figure>
+                                    <img src="assets/images/index/team_img_6.webp" alt="member4" />
+                                </figure>
+                                <div class="social-icons">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_data">
+                                <h4>Harley Maxwell</h4>
+                                <p>Harley Maxwell</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 mt-lg-4 mt-md-4">
+                        <div>
+                            <div class="team-member">
+                                <figure>
+                                    <img src="assets/images/index/team_img_7.webp" alt="member4" />
+                                </figure>
+                                <div class="social-icons">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_data">
+                                <h4>Harley Maxwell</h4>
+                                <p>Harley Maxwell</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 mt-lg-4 mt-md-4">
+                        <div>
+                            <div class="team-member">
+                                <figure>
+                                    <img src="assets/images/index/team_img_8.webp" alt="member4" />
+                                </figure>
+                                <div class="social-icons">
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_data">
+                                <h4>Harley Maxwell</h4>
+                                <p>Harley Maxwell</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============= End of 2.3. OurTeam Section ========== -->
+        <!-- ============= 1.6. stats Section ============= -->
+        <section class="Stats Team_Stats">
+            <div class="container">
+                <div class="stats-bg">
+                    <div class="stats__cornerBox">
+                        <h3><span class="number" data-final-value="460">0</span>+ Projects</h3>
+                        <p>Completed Over</p>
+                    </div>
+                    <div class="pt-lg-4">
+                        <h5>Our Stats</h5>
+                        <h2>Solutions for all the IT issues</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. Scelerisque consectetur
+                            velit sed magna phasellus metus.
+                        </p>
+                        <div class="d-flex">
+                            <div>
+                                <figure>
+                                    <img src=" assets/images/icons/messege_icon.svg" alt="messege_icon" />
+                                </figure>
+                                <h4>Free Consultation</h4>
+                            </div>
+                            <hr>
+                            <div>
+                                <figure>
+                                    <img src=" assets/images/icons/reward__icon.svg" alt="reward_icon" />
+                                </figure>
+                                <h4>Qualified Experts</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============= End of 1.6. stats Section ============= -->
+        <!-- ============= 1.13. Footer ============= -->
+        <footer>
+            <div class="container">
+                <div class="d-flex">
+                    <div>
+                        <a href="./index.html">
+                            <figure>
+                                <img src=" assets/images/Cybbor-logo.svg" alt="Cybbor-logo" />
+                            </figure>
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            doeiusmod tempor incididunt.
+                        </p>
+                    </div>
+                    <div>
+                        <h5>Subscribe Our newsletter</h5>
+                        <form action="#">
+                            <input type="text" placeholder="Subscribe Our newsletter" required />
+                            <div>
+                                <button class="hover1">Get Started</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <div class="Footer_Links">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <a href="./ContactUs.html">
+                                    Plaza X , XY Floor, XYZ Street, XYZ
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <a href="./ContactUs.html">
+                                    yourname@email.com
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <a href="./ContactUs.html">
+                                    +123-456-7890
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Footer_Links">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./About.html">About</a></li>
+                            <li><a href="./Services.html">Services</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./Testimonial.html">Projects</a></li>
+                            <li><a href="./ContactUs.html">Contact</a></li>
+                            <li><a href="./FAQ.html">FAQ</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="./Services.html">Server Protection</a></li>
+                            <li><a href="./Services.html">Network Protection</a></li>
+                            <li><a href="./Services.html">Antivirus</a></li>
+                        </ul>
+                    </div>
+                    <div class="Footer_Links">
+                        <p>Folow Us:</p>
+                        <div>
+                            <a href="./ContactUs.html">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="./ContactUs.html">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="./ContactUs.html">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="./ContactUs.html">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Copyright ">
+                <p class="container">
+                    Copyright © <span id="year"></span> Cybbor By Evonicmedia. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+        <!-- ============= End of 1.13. Footer ============= -->
+    </div>
+
+    <!-- bootstrap min javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- j Query -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <!-- slick slider js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- main javascript -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

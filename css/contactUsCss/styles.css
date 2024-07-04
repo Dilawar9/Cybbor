@@ -1,0 +1,128 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+p{
+    font-family: "Public Sans", sans-serif;
+    color: white;
+}
+h2{
+    font-family: "Public Sans", sans-serif;
+    color: white;
+}
+h5{
+    font-family: "Public Sans", sans-serif;
+    color:white;
+}
+
+
+.LetTalk {
+    background-color: #271334;
+    padding: 40px;
+  }
+  
+  .LetTalk .row {
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .LetTalk .owner h2 {
+    font-size: 46px;
+  }
+  .LetTalk .owner p{
+    font-size: 14px;
+  }
+  
+  .LetTalk .owner .d-flex {
+    gap: 20px;
+    padding-top: 20px;
+    flex-direction: row;
+  }
+  .LetTalk .owner .d-flex h5{
+    font-size: 20px;
+  }
+  .LetTalk .owner .d-flex p{
+    font-size: 16px;
+  }
+  
+  .LetTalk .owner div {
+    align-items: center;
+  }
+  
+  .LetTalk .owner {
+    padding: 30px;
+    background-color: #682FA8;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
+  }
+  
+  .LetTalk .owner a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #FFFFFF1A;
+    position: relative;
+    padding: 21px;
+  }
+  
+  .LetTalk .owner i {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .LetTalk .form-action {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+  }
+  
+  .LetTalk .form-action input {
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid;
+    border: 1px solid #D9D9D9
+  }
+  
+  .LetTalk .form-action input::placeholder {
+    color: #D9D9D9;
+  }
+  .LetTalk .form-action textarea::placeholder {
+    color: #D9D9D9;
+  }
+  
+  .LetTalk .form-action textarea {
+    height: 190px;
+    padding: 20px;
+    border: 1px solid;
+    background-color: transparent;
+    color: #D9D9D9;
+    border: 1px solid #D9D9D9
+  }
+  
+  .LetTalk .form-action a {
+    padding: 12px;
+    text-align: center;
+    background-color: #DC284E;
+    text-decoration: none;
+    color: white;
+  
+  }
+  
+  
+  /* end of contact section */
+  
+  
+  /* map section */
+
+  /* end of map section */

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/fav icon.png" type="image/x-icon" />
+
+  <!-- faremwork of css -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- fonts awsome icon link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Public sans Font-Family -->
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- css Links  -->
+
+  <link rel="stylesheet" href="./css/AboutUsCSS/styles.css" />
+  <link rel="stylesheet" href="./css/AboutUsCSS/responsive.css" />
+  <title>Cybbor</title>
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <div class="ThreeSections-bg" id="section__header">
+      <div id="bg_img">
+        <!-- ======== 1.1. header section ======== -->
+        <header>
+          <nav class="container navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a href="#" class="nav-logo p-0">
+                <features id="header__logo">
+                  <img src="./images/Cybbor-logo 1.png" alt="logo" />
+                </features>
+              </a>
+              <button class="open-aside" onclick="open_aside()" type="button">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav d-flex justify-content-center
+                  align-items-center gap-lg-4 gap-md-2 gap-sm-2 gap-2 mb-2
+                  mb-lg-0"" >
+                  <li class=" nav-item">
+                  <a class="nav-link" href=".heroSection">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href=".Features">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href=".services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href=".Plan">Pricing</a>
+                  </li>
+                  <li class="dropdown">
+                    <a class="nav-link" href="#">Pages <i class="fa-sharp fa-solid fa-sort-down"></i></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href=".services">Services</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href=".chooseUs">Our Blog</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href=".stats">Blog Details</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href=".Benefits">Team</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href=".Testimonial">Testimoinals</a>
+                      </li>
+                      <li><a class="dropdown-item" href=".FAQ">FAQs</a></li>
+                      <li>
+                        <a class="dropdown-item" href=".Footer">Contact</a>
+                      </li>
+                      <li><a class="dropdown-item" href="#">404</a></li>
+                      <li><a class="dropdown-item" href="#">Coming Soon</a></li>
+                    </ul>
+                  </li>
+                  <div>
+                    <button class="join-btn hover1">Get Started</button>
+                  </div>
+              </div>
+            </div>
+          </nav>
+          <!--===== aside navigation slidebar =====-->
+          <aside>
+            <div id="mySideNav" class="right-sidbar">
+              <div class="side-nav-logo d-flex justify-content-between align-items-center ps-2 pe-1 nav-logo">
+                <features class="navbar-brand">
+                  <a href="#">
+                    <img src="./images/Cybbor-logo 1.png" alt="#" />
+                  </a>
+                </features>
+                <button class="fa-solid fa-xmark" onclick="close_aside()"></button>
+              </div>
+              <ul>
+                <li class="nav-item">
+                  <a aria-current="page" href="#heroSection">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a aria-current="page" href="#Features">About</a>
+                </li>
+                <li class="nav-item">
+                  <a aria-current="page" href="#Services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a aria-current="page" href="#Plan">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <div class="d-flex align-items-center justify-content-between text-center" id="slid-btn">
+                    <span class="dark-purple-text-color fw-bolder">
+                      Pages
+                    </span>
+                    <button class="a-slid page-btn"></button>
+                    <i class="fa-solid fa-caret-down pe-2"></i>
+                  </div>
+                  <ul id="slid-drop" class="p-0 mt-3">
+                    <li><a href="#stats">Blog Details</a></li>
+                    <li><a href="#whyUs">Our Blog</a></li>
+                    <li><a href="#Benefits">Team</a></li>
+                    <li><a href="#Testimonial">Testimonials</a></li>
+                    <li><a href="#FAQ">FAQs</a></li>
+                    <li><a href="#Footer">Contact</a></li>
+                    <li><a href="#">404</a></li>
+                    <li><a href="#">Coming Soon</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </header>
+        <!-- ============= End of Header Section ============= -->
+
+        <!-- ============= Hero Section  =============-->
+        <section class="heroSection">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7 col-md-7">
+                <div>
+                  <h2>Protecting you from the dangers of cyberspace.</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Nunc morbi elit
+                    neque ornare at. Eget morbi et elit mattis interdum
+                    pulvinar cras sollicitudin. Elit adipiscing arcu sit
+                    ullamcorper velit. Viverra sed enim pretium sed risus in.
+                    <br />
+                    <br />
+                    Lorem ipsum dolor sit amet consectetur. Nunc morbi elit
+                    neque ornare at. Eget morbi et elit mattis.
+                  </p>
+                  <a href="">Learn More</a>
+                </div>
+                <div class="d-flex">
+                  <span>
+                    <figure>
+                      <img src="./images/NeuralNetworks.png" alt="NeuralNetworks" />
+                    </figure>
+                    <div>
+                      <h5>Neural Networks</h5>
+                      <a href="#">Get Info <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                  </span>
+                  <div class="line"></div>
+                  <span>
+                    <figure>
+                      <img src="./images/AnomolyDetection.png" alt="AnomolyDetection" />
+                    </figure>
+                    <div>
+                      <h5>Anomaly Detection</h5>
+                      <a href="">Get Info <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                  </span>
+                  <div class="line"></div>
+                  <span>
+                    <figure>
+                      <img src="./images/API security.png" alt="API security" />
+                    </figure>
+                    <div>
+                      <h5>API Security</h5>
+                      <a href="">Get Info <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                  </span>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-5">
+                <figure>
+                  <img src="./images/aboutUsPageHerorightImg.png" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--============= End of Hero Section  ============= -->
+      </div>
+    </div>
+    <!-- =============  Features Section ============= -->
+    <section class="Features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="row">
+              <h5>Our Features</h5>
+              <h2>Who we’ve worked with</h2>
+              <div class="d-flex justify-content-between align-items-center">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Scelerisque
+                  consectetur velit sed magna phasellus metus. Ultricies
+                  volutpat eget sit orci eu convallis morbi.
+                </p>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+            <div class="row features__left-bottom">
+              <figure class="col-lg-5 col-md-5 col-sm-5 slider">
+                <img class="slide" src="./images/featuresImg.png" alt="featuresImg" />
+                <img class="slide" src="./images/featuresImg1.png" alt="featuresImg" />
+                <img class="slide" src="./images/featuresImg2.png" alt="featuresImg" />
+              </figure>
+              <div class="col-lg-7 col-md-7 col-sm-7 position-relative">
+                <div class="sliderButtons">
+                  <button id="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                  <button id="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="textSlider">
+                  <div class="text-slide active">
+                    <h3>Protect your privacy</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque
+                      consectetur velit sed magna phasellus metus. Ultricies
+                      volutpat eget sit orci eu convallis morbi.
+                    </p>
+                    <a href="#">Get Started</a>
+                  </div>
+                  <div class="text-slide">
+                    <h3>Real-time protection</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque
+                      consectetur velit sed magna phasellus metus. Ultricies
+                      volutpat eget sit orci eu convallis morbi.
+                    </p>
+                    <a href="#">Get Started</a>
+                  </div>
+                  <div class="text-slide">
+                    <h3>Secure your identity</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur. Scelerisque
+                      consectetur velit sed magna phasellus metus. Ultricies
+                      volutpat eget sit orci eu convallis morbi.
+                    </p>
+                    <a href="#">Get Started</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 features__stats">
+            <h5>Our Stats</h5>
+            <div>
+              <div>
+                <h3>4400</h3>
+                <p>Clients in 55+ Countries</p>
+              </div>
+              <div>
+                <h3>250B</h3>
+                <p>Security Events Processed Daily</p>
+              </div>
+              <div>
+                <h3>3270</h3>
+                <p>Predicted Loss due to hacks</p>
+              </div>
+              <div>
+                <h3>97</h3>
+                <p>Efficiency of the confrontation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============= End of Features Section ============= -->
+
+    <!-- ============== Our-Mission Section=========== -->
+
+    <section class="mission">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div>
+              <h3>Our Mission</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Eros eget mi aliquam non
+                dolor pulvinar at quam hac. Etiam consequat viverra integer
+                faucibus imperdiet. Pretium accumsan integer ipsum amet euismod
+                libero urna sollicitudin egestas. Ullamcorper nisi nullam
+                condimentum tristique. Porttitor pellentesque aliquam justo sit
+                in enim et at nec. Neque sed et malesuada eget diam.
+                <br /><br />
+                Ullamcorper nisi nullam condimentum tristique. Porttitor
+                pellentesque aliquam justo sit in enim et at nec. Neque sed et
+                malesuada eget diam.
+              </p>
+            </div>
+            <div class="d-flex">
+              <div>
+                <h5>Clean & Optimal Work</h5>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+              <div>
+                <h5>AI and Programming</h5>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div>
+              <h3>Our Vision</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Eros eget mi aliquam non
+                dolor pulvinar at quam hac. Etiam consequat viverra integer
+                faucibus imperdiet. Pretium accumsan integer ipsum amet euismod
+                libero urna sollicitudin egestas. Ullamcorper nisi nullam
+                condimentum tristique. Porttitor pellentesque aliquam justo sit
+                in enim et at nec. Neque sed et malesuada eget diam.
+              </p>
+            </div>
+            <figure>
+              <img src="./images/missionLeftBottomImg.png" alt="mission" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== End of Our-Mission Section=========== -->
+
+
+    <!-- ============= Our Team Section ========== -->
+ 
+    <section class="Ourteam">
+      <div class="container">
+        <h5>Our Team</h5>
+        <h3>Who we've worked with</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Scelerisque consectetur velit sed magna phasellus metus. Ultricies
+          volutpat eget sit orci eu convallis morbi.
+        </p>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 ">
+            <div class="team-member">
+              <figure>
+                <img src="./images//team-3.png" />
+              </figure>
+              <div class="social-icons">
+                <a href="#">
+                  <div><i class="fa-brands fa-facebook"></i></div>
+                </a>
+                <a href="#">
+                  <div><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="#">
+                  <div><i class="fa-brands fa-twitter"></i></div>
+                </a>
+              </div>
+            </div>
+            <div class="team-member-data">
+              <h4>Harley Maxwell</h4>
+              <p>Harley Maxwell</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 ">
+            <div class="team-member">
+              <figure>
+                <img src="./images//team-2.png" />
+              </figure>
+              <div class="social-icons">
+                <a href="#">
+                  <div><i class="fa-brands fa-facebook"></i></div>
+                </a>
+                <a href="#">
+                  <div><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="#">
+                  <div><i class="fa-brands fa-twitter"></i></div>
+                </a>
+              </div>
+            </div>
+            <div class="team-member-data">
+              <h4>Harley Maxwell</h4>
+              <p>Harley Maxwell</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 ">
+            <div class="team-member">
+              <figure>
+                <img src="./images//team-4.png" />
+              </figure>
+              <div class="social-icons">
+                <a href="#">
+                  <div><i class="fa-brands fa-facebook"></i></div>
+                </a>
+                <a href="#">
+                  <div><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="#">
+                  <div><i class="fa-brands fa-twitter"></i></div>
+                </a>
+              </div>
+            </div>
+            <div class="team-member-data">
+              <h4>Harley Maxwell</h4>
+              <p>Harley Maxwell</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 ">
+            <div class="team-member">
+              <figure>
+                <img src="./images/team_img_4.png" />
+              </figure>
+              <div class="social-icons">
+                <a href="#">
+                  <div><i class="fa-brands fa-facebook"></i></div>
+                </a>
+                <a href="#">
+                  <div><i class="fa-brands fa-instagram"></i></div>
+                </a>
+                <a href="#">
+                  <div><i class="fa-brands fa-twitter"></i></div>
+                </a>
+              </div>
+            </div>
+            <div class="team-member-data">
+              <h4>Harley Maxwell</h4>
+              <p>Harley Maxwell</p>
+            </div>
+          </div>
+        </div>
+        <div class="team_button">
+          <a href="#"> View All Team</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============= End of Our Team Section ========== -->
+
+    <!-- ============= Benefits Section ============= -->
+    <section class="Benefits">
+      <div class="container">
+        <div class="benefits">
+          <div class="d-flex">
+            <h5>Our Benefits</h5>
+            <h2>Hear What They Say About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Scelerisque consectetur
+              velit sed magna phasellus metus.
+            </p>
+          </div>
+          <div class="d-flex">
+            <div>
+              <i class="fa-regular fa-square-check"></i>
+              <span>
+                <h5>Free Consultation</h5>
+                <p>Users on our antivirus software</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa-regular fa-square-check"></i>
+              <span>
+                <h5>Certified Professional</h5>
+                <p>Users on our antivirus software</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa-regular fa-square-check"></i>
+              <span>
+                <h5>Security on a global scale</h5>
+                <p>Users on our antivirus software</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa-regular fa-square-check"></i>
+              <span>
+                <h5>24/7 Premium Support</h5>
+                <p>Users on our antivirus software</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa-regular fa-square-check"></i>
+              <span>
+                <h5>Trusted security</h5>
+                <p>Users on our antivirus software</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa-regular fa-square-check"></i>
+              <span>
+                <h5>4.8+ Rating</h5>
+                <p>Users on our antivirus software</p>
+              </span>
+            </div>
+          </div>
+
+          <div class="mt-lg-4">
+            <div class="text-center">
+              <span class="line"></span>
+              <span class="text">Our Certifications</span>
+              <span class="line"></span>
+            </div>
+            <div class="d-flex">
+              <img src="./images/benefits-certicicates-logo-1.png" alt="benefits-certicicates-logo-1" />
+              <img src="./images/benefits-certicicates-logo-2.png" alt="benefits-certicicates-logo-2" />
+              <img src="./images/benefits-certicicates-logo-3.png" alt="benefits-certicicates-logo-3" />
+              <img src="./images/benefits-certicicates-logo-4.png" alt="benefits-certicicates-logo-4" />
+              <img src="./images/benefits-certicicates-logo-5.png" alt="benefits-certicicates-logo-5" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============= End of Benefits Section =============  -->
+
+    <!-- ============= Free-Trial Section =============  -->
+    <section class="FreeTrial">
+      <div class="container">
+        <div class="freeTrial-bg">
+          <div class="freeTrial__content">
+            <h2>
+              Still Confused About Our Features? Get a Free Trial 7 Days
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+            <button class="hover1">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============= End of Free-Trial Section ============= -->
+
+    <!-- ============= Footer ============= -->
+    <section class="footer">
+      <div class="container">
+        <div class="d-flex">
+          <div>
+            <figure>
+              <img src="./images/Cybbor-logo 1.png" alt="Cybbor-logo" />
+            </figure>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              doeiusmod tempor incididunt.
+            </p>
+          </div>
+          <div>
+            <h5>Subscribe Our newsletter</h5>
+            <span>
+              <input type="text" placeholder="Subscribe Our newsletter" />
+              <button>Get Started</button>
+            </span>
+          </div>
+        </div>
+        <div class="mt-4">
+          <div>
+            <span>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Plaza X , XY Floor, XYZ Street, XYZ</p>
+            </span>
+            <span>
+              <i class="fa-solid fa-envelope"></i>
+              <p>yourname@email.com</p>
+            </span>
+            <span>
+              <i class="fa-solid fa-phone"></i>
+              <p>+123-456-7890</p>
+            </span>
+          </div>
+          <div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Server </a></li>
+              <li><a href="#">Network </a></li>
+              <li><a href="#">Antivirus</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Folow Us:</p>
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============= End of Footer ============= -->
+
+    <section class="Copyright container-fluid">
+      <p class="container">
+        Copyright © 2023 Cybbor By Evonicmedia. All Rights Reserved.
+      </p>
+    </section>
+  </div>
+
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
